@@ -12,3 +12,4 @@ Momentum JavaScript clone coding project through Nomadcoder lecture.
   - feat: init project
   - feat: implement clock
   - feat: implement greeting
+  - feat: implement todo-list
