@@ -15,3 +15,4 @@ Momentum JavaScript clone coding project through Nomadcoder lecture.
   - feat: implement todo-list
 - 2021.04.24
   - feat: implement background image
+  - feat: implement weather
