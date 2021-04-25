@@ -19,25 +19,31 @@ function createItem(type, text){
             item.setAttribute("class", "todo__item");
             item.innerHTML = `
             <span>${ text }</span>
-            <button class="remove">X</button>
-            <button class="right">></button>
+            <div>
+                <button class="remove">X</button>
+                <button class="right">></button>
+            </div>
             `
             break;
         case PROGRESS_CN:
             item.setAttribute("class", "progress__item");
             item.innerHTML = `
-            <button class="left"><</button>
             <span>${ text }</span>
-            <button class="remove">X</button>
-            <button class="right">></button>
+            <div>
+                <button class="left"><</button>
+                <button class="remove">X</button>
+                <button class="right">></button>
+            </div>
             `
             break;
         case COMPLETED_CN:
             item.setAttribute("class", "completed__item");
             item.innerHTML = `
-            <button class="left"><</button>
             <span>${ text }</span>
-            <button class="remove">X</button>
+            <div>
+                <button class="left"><</button>
+                <button class="remove">X</button>
+            </div>
             `
             break;
         default:
@@ -88,7 +94,8 @@ function removeItem(type, item){
 
 function buttonHandler(){
     // todoItem button handler
-    const currentItem = this.parentElement;
+    // const currentItem = (this.className === "left") ? this.parentElement : this.parentElement.parentElement;
+    const currentItem = this.parentElement.parentElement;
     const currentList = currentItem.parentElement;
     const currentType = currentList.getAttribute("class");
     const currentIndex = Array.prototype.indexOf.call(currentList.getElementsByTagName("li"), currentItem);

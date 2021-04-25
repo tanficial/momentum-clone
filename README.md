@@ -16,3 +16,4 @@ Momentum JavaScript clone coding project through Nomadcoder lecture.
 - 2021.04.24
   - feat: implement background image
   - feat: implement weather
+  - feat: design layout

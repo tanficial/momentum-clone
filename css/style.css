@@ -1,2 +1,43 @@
+@import "./reset.css";
 @import "./components/greeting.css";
 @import "./components/background.css";
+@import "./components/todo.css";
+@import "./components/weather.css";
+
+body {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: rgba(50, 50, 50, 0.7);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5rem;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+}

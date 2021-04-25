@@ -21,7 +21,7 @@ function askName(){
 
 function paintGreeting(text){
     form.classList.remove(SHOW_CN);
-    greet.innerText = `Hello ${ text }!!`;
+    greet.innerText = `Hello, ${ text }!!`;
     greet.classList.add(SHOW_CN);
 }
 
