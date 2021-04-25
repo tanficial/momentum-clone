@@ -1,8 +1,10 @@
-# Momentum clone project
+# [Momentum](https://tanficial.github.io/momentum-clone) clone project
 
 Momentum JavaScript clone coding project through Nomadcoder lecture.
 
 노마드코더 강의를 통해 진행한 모멘텀 JavaScript 클론 코딩 프로젝트
+
+https://tanficial.github.io/momentum-clone
 
 ---
 
@@ -18,3 +20,4 @@ Momentum JavaScript clone coding project through Nomadcoder lecture.
   - feat: implement weather
   - feat: design layout
   - fix: greeting component
+  - deploy
