@@ -11,7 +11,6 @@ function loadName(){
     }
     else{
         paintGreeting(currentUser);
-
     }
 }
 
@@ -33,8 +32,16 @@ function saveName(text){
     form.addEventListener("submit", function(event){
         event.preventDefault();
         const userName = input.value;
+        input.value = "";
         saveName(userName);
         loadName();
+    });
+
+    greet.addEventListener("click", function(){
+        form.classList.toggle(SHOW_CN);
+        greet.classList.toggle(SHOW_CN);
+        input.value = localStorage.getItem(USER_LS);
+        input.focus();
     });
 
     loadName();

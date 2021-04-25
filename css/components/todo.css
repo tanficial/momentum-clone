@@ -14,17 +14,6 @@
   width: 33%;
 }
 
-input {
-  background-color: rgba(0, 0, 0, 0);
-  text-decoration: none;
-  border: none;
-  border-bottom: 1px solid white;
-  outline: none;
-  font-size: 1.2rem;
-  color: white;
-  padding: 3px;
-}
-
 ::placeholder {
   color: white;
 }
